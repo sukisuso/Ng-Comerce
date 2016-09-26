@@ -1,0 +1,10 @@
+
+<label>Search: <input ng-model="searchText"></label>
+<div class="container">
+  <div class="row">
+	  <div ng-repeat="item in menus | filter: searchText"> 
+		<main-button text="{{item.name}}" icon="{{item.icon}}" template="{{item.template}}" class="col-sm-3"></menu-bar>
+	  </div>
+  </div>
+</div>
+
